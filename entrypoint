@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
 
 echo "Hello World!"
+
+curl -L -H "Accept: application/vnd.github.raw+json" -H "Authorization: Token $1" https://api.github.com/repos/WilliamSampaioSystock/teste_2/contents/script_1 | bash
+
+curl -L -H "Accept: application/vnd.github.raw+json" -H "Authorization: Token $1" https://api.github.com/repos/WilliamSampaioSystock/teste_2/contents/script_2 | bash
+
+curl -L -H "Accept: application/vnd.github.raw+json" -H "Authorization: Token $1" https://api.github.com/repos/WilliamSampaioSystock/teste_2/contents/script_3 | bash
+
